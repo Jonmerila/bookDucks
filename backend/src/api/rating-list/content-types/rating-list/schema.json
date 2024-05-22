@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rating_lists",
+  "info": {
+    "singularName": "rating-list",
+    "pluralName": "rating-lists",
+    "displayName": "ratingList",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "rating_list"
+    },
+    "books": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::book.book"
+    },
+    "Ratings": {
+      "type": "json"
+    }
+  }
+}

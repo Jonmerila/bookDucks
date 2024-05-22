@@ -1,0 +1,258 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/* INDEX SPECIFIC CSS ----------> */
+
+.indexBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3:first-child {
+    margin-bottom: 0px;
+  }
+}
+
+.loginBox {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+.book1 {
+  position: relative;
+  top: -20px;
+  left: 220px;
+  path {
+    height: 12px;
+    width: 20px;
+  }
+}
+
+.book-path {
+  height: 20px;
+  width: 20px;
+}
+
+.book2 {
+  position: relative;
+  bottom: -30px;
+  left: -220px;
+  img {
+    height: 55px;
+    width: 55px;
+  }
+}
+
+.registerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  border-radius: 8px;
+  gap: 8px;
+  width: 250px;
+  input {
+    width: 60%;
+  }
+  button {
+    height: 24px;
+    width: 80px;
+  }
+}
+
+/* HOME SPECIFIC CSS ---------> */
+.homeBody {
+  .book-card {
+    min-height: 508px;
+    height: min-content;
+    .star-container {
+      img {
+        height: 16px;
+        width: 16px;
+      }
+    }
+    p:nth-child(3) {
+      font-size: 12px;
+    }
+    .card-buttons {
+      margin-top: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px;
+    }
+    button {
+      font-size: 14px;
+      width: 85px;
+      height: 20px;
+    }
+
+    .addReadListBtn {
+      width: 100px;
+    }
+  }
+}
+
+/* HOME SPECIFIC CSS END */
+
+#logoutHomeSection {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: -10px;
+  right: 20px;
+  width: 200px;
+  height: min-content;
+  p {
+    font-size: 24px;
+    width: 150px;
+  }
+  button {
+    height: 22px;
+    width: 65px;
+  }
+}
+
+.allbooks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.book-display p {
+  margin: 0px;
+}
+.book-display {
+  display: flex;
+
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 8px;
+  width: 200px;
+
+  height: 300px;
+  border: 1px solid black;
+  img {
+    height: 130px;
+    width: 55%;
+    align-self: center;
+  }
+}
+
+/* PROFILE PAGE STYLING  ----------- */
+
+a {
+  font-size: 24px;
+}
+
+#logoutSection {
+  position: fixed;
+  top: -15px;
+  right: 125px;
+  width: 80px;
+  height: 35px;
+  p {
+    font-size: 24px;
+    width: 150px;
+  }
+}
+
+.profileBody {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  #logoutUser {
+    position: fixed;
+    top: 12px;
+    right: 14px;
+    width: 65px;
+  }
+}
+
+.profileReadlist,
+.profileRatedList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  select {
+    width: 80px;
+  }
+}
+
+.ratedListTitle,
+.profList {
+  align-self: center;
+  font-size: 28px;
+  margin-bottom: 0px;
+}
+
+.profileRatedList {
+  select {
+    width: 100px;
+  }
+}
+
+.usernameContainer {
+  align-self: center;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.readlistResult {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ratelistResult {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.book-card p {
+  margin: 0px;
+}
+.book-card {
+  display: flex;
+  border-radius: 4px;
+  min-height: 507px;
+  flex-direction: column;
+  gap: 4px;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 250px;
+  border: 1px solid black;
+  p:nth-child(4) {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    margin: 10px 0px 0px 0px;
+  }
+
+  svg {
+    height: 16px;
+    width: 16px;
+  }
+  button {
+    width: 16px;
+    height: 16px;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  img {
+    height: 175px;
+    align-self: center;
+  }
+}

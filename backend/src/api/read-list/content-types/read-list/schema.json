@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "read_lists",
+  "info": {
+    "singularName": "read-list",
+    "pluralName": "read-lists",
+    "displayName": "readList",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "read_list"
+    },
+    "title": {
+      "type": "string"
+    },
+    "books": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::book.book"
+    }
+  }
+}

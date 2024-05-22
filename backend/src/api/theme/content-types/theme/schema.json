@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "themes",
+  "info": {
+    "singularName": "theme",
+    "pluralName": "themes",
+    "displayName": "Theme",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "theme": {
+      "type": "json",
+      "required": true
+    },
+    "selectedTheme": {
+      "type": "enumeration",
+      "enum": [
+        "darkmode",
+        "lightmode",
+        "red-theme"
+      ]
+    }
+  }
+}
